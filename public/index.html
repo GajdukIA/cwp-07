@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="/jquery-3.3.1.min.js" ></script>
+    <script type="text/javascript" src="/index.js" ></script>
+    <link rel="stylesheet" href="/site.css">
+    <title>Статьи</title>
+</head>
+<body>
+    <div>
+        <label for="sortOrders">Сортировка статей</label>
+        <br/>
+        <select id="sortOrders" onchange="sortChanged()">
+            <option value="asc">По возрастанию даты</option>
+            <option value="desc" selected="selected">По убыванию даты</option>
+        </select>
+
+        <input type="button" value="Добавить статью" onclick="goToForm()">
+    </div>
+    <div id="articles"></div>
+</body>
+</html>
